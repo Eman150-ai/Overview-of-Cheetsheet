@@ -1,0 +1,44 @@
+┌─────────────────────────────────────────────────────┐
+│                     USER                            │
+└─────────────────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────┐
+│                PRESENTATION LAYER                   │
+│                     (Frontend)                      │
+│                                                     │
+│  1. Decision Tree                                  │
+│  2. AI Chat Window                                 │
+│  3. Final Check Page                               │
+│  4. Cheatsheet Viewer                              │
+│  5. "Situation Changed" Button                     │
+└─────────────────────────────────────────────────────┘
+                         │
+                         │ HTTP Requests
+                         ▼
+┌─────────────────────────────────────────────────────┐
+│                APPLICATION LAYER                    │
+│                     (Backend)                       │
+│                                                     │
+│  POST /cheatsheet/generate                         │
+│  POST /cheatsheet/update                           │
+│                                                     │
+│  - Session Validator                               │
+│  - Workflow Engine                                 │
+│  - Step Builder                                    │
+└─────────────────────────────────────────────────────┘
+                         │
+                         │ Calls
+                         ▼
+┌─────────────────────────────────────────────────────┐
+│           INTELLIGENCE & KNOWLEDGE LAYER           │
+│                                                     │
+│  AI Engine (LLM API)                               │
+│  - Generates Personalized Plan                     │
+│  - Replans on Update                               │
+│                                                     │
+│  GuideLibrary                                      │
+│  - G1 Guide                                        │
+│  - G2 Guide                                        │
+│  - G Test Guide                                    │
+└─────────────────────────────────────────────────────┘
